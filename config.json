@@ -1,0 +1,30 @@
+{
+  "logs": [
+    {
+      "file": "./logs/main.log",
+      "type": {
+        "error": ["ERROR", "FAIL"],
+        "warn": ["WARNING", "WARN"],
+        "info": ["INFO"]
+      },
+      "printOrder": "asc",
+      "refreshInterval": 1000,
+      "logLevels": ["error", "warn"],
+      "maxLines": 100,
+      "timestampFormat": "YYYY-MM-DD HH:mm:ss"
+    },
+    {
+      "file": "./logs/renderer.log",
+      "type": {
+        "error": ["CRITICAL", "ERROR"],
+        "warn": ["ALERT", "WARN"],
+        "info": ["INFO", "OK"]
+      },
+      "printOrder": "desc",
+      "refreshInterval": 2000,
+      "logLevels": ["info", "error", "warn"],
+      "maxLines": 50,
+      "timestampFormat": "DD/MM/YYYY HH:mm"
+    }
+  ]
+}
